@@ -32,10 +32,10 @@ namespace WpfApp13.ViewModel
 
         public MainVM(DateTime date)
         {
-            Kakashka_Parashka(date);
+            Conver(date);
         }
 
-        public void Kakashka_Parashka(DateTime date)
+        public void Conver(DateTime date)
         {
             Converter converter = new Converter();
             var ViborsList = converter.Jsonviser<List<ChoiceDayModel>>("Mood.json") ?? new List<ChoiceDayModel>();
